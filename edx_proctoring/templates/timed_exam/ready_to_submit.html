@@ -2,28 +2,28 @@
 <div class="sequence timed-exam completed" data-exam-id="{{exam_id}}">
   <h3>
     {% blocktrans %}
-      Are you sure that you want to submit your timed exam?
+      คุณแน่ใจหรือไม่ว่าต้องการส่งข้อสอบ?
     {% endblocktrans %}
   </h3>
   <p>
     {% blocktrans %}
-      Make sure that you have selected "Submit" for each problem before you submit your exam.
+      ตรวจสอบให้แน่ใจว่าคุณได้กด "ยอมรับ" สำหรับข้อสอบในแต่ละข้อก่อนที่จะส่งข้อสอบ.
     {% endblocktrans %}
   </p>
   <p>
     {% blocktrans %}
-      After you submit your exam, your exam will be graded.
+      หลังจากส่งข้อสอบแล้ว ข้อสอบจะถูกให้คะแนน.
     {% endblocktrans %}
   </p>
   <button type="button" name="submit-proctored-exam" class="exam-action-button btn btn-pl-primary btn-base" data-action="submit" data-exam-id="{{exam_id}}" data-change-state-url="{{change_state_url}}">
     {% blocktrans %}
-      Yes, submit my timed exam.
+      ใช่, ส่งข้อสอบของฉัน.
     {% endblocktrans %}
   </button>
   {% if does_time_remain %}
     <button type="button" name="goback-proctored-exam" class="exam-action-button btn btn-secondary btn-base" data-action="start" data-exam-id="{{exam_id}}" data-change-state-url="{{change_state_url}}" style="box-shadow: none">
       {% blocktrans %}
-        No, I want to continue working.
+        ไม่, ฉันต้องการทำต่อ.
       {% endblocktrans %}
     </button>
   {% endif %}

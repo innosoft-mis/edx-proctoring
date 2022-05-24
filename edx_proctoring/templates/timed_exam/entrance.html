@@ -2,24 +2,24 @@
 <div class="sequence timed-exam entrance" data-exam-id="{{exam_id}}">
   <h3>
     {% blocktrans %}
-    {{ exam_name }} is a Timed Exam ({{total_time}})
+    {{ exam_name }} เป็นข้อสอบแบบจับเวลา ({{total_time}})
     {% endblocktrans %}
   </h3>
   <p>
-    {% trans "This exam has a time limit associated with it." %}
+    {% trans "การสอบนี้มีกำหนดเวลามาเกี่ยวข้อง." %}
     <strong>
-      {% trans "To pass this exam, you must complete the problems in the time allowed." %}
+      {% trans "เพื่อผ่านการสอบนี้ คุณจะต้องทำข้อสอบให้เสร็จภายในเวลาที่กำหนด." %}
     </strong>
-    {% trans "After you select " %}
+    {% trans "หลังจากคุณเลือก " %}
     <strong>
-      {% trans "I am ready to start this timed exam," %}
+      {% trans "ฉันพร้อมที่จะทำข้อสอบนี้แล้ว," %}
     </strong>
-    {% trans "you will have "%} {{total_time|lower}} {% trans " to complete and submit the exam." %}
+    {% trans "คุณจะมีเวลา "%} {{total_time|lower}} {% trans " เพื่อทำข้อสอบให้เสร็จสมบูรณ์." %}
   </p>
   <button class="gated-sequence start-timed-exam action-primary" data-ajax-url="{{enter_exam_endpoint}}" data-exam-id="{{exam_id}}">
     <a>
       {% blocktrans %}
-        I am ready to start this timed exam.
+      ฉันพร้อมที่จะทำข้อสอบนี้แล้ว.
       {% endblocktrans %}
       <span class="icon fa fa-arrow-circle-right" aria-hidden="true"></span>
     </a>
