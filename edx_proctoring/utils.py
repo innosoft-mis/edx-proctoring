@@ -84,10 +84,10 @@ def humanized_time(time_in_minutes):
         hours_present = False
         template = ""
     elif hours == 1:
-        template = _("{num_of_hours} hour")
+        template = _("{num_of_hours} ชั่วโมง")
         hours_present = True
     elif hours >= 2:
-        template = _("{num_of_hours} hours")
+        template = _("{num_of_hours} ชั่วโมง")
         hours_present = True
     else:
         template = "error"
@@ -95,17 +95,17 @@ def humanized_time(time_in_minutes):
     if template != "error":
         if minutes == 0:
             if not hours_present:
-                template = _("{num_of_minutes} minutes")
+                template = _("{num_of_minutes} นาที")
         elif minutes == 1:
             if hours_present:
-                template += _(" and {num_of_minutes} minute")
+                template += _(" {num_of_minutes} นาที")
             else:
-                template += _("{num_of_minutes} minute")
+                template += _("{num_of_minutes} นาที")
         else:
             if hours_present:
-                template += _(" and {num_of_minutes} minutes")
+                template += _(" {num_of_minutes} นาที")
             else:
-                template += _("{num_of_minutes} minutes")
+                template += _("{num_of_minutes} นาที")
 
     human_time = template.format(num_of_hours=hours, num_of_minutes=minutes)
     return human_time
