@@ -6,20 +6,20 @@
     {% endblocktrans %}
   </h3>
   <p>
-    {% trans "การสอบนี้มีกำหนดเวลามาเกี่ยวข้อง." %}
+    {% trans "การสอบนี้มีกำหนดเวลามาเกี่ยวข้อง" %}
     <strong>
-      {% trans "เพื่อผ่านการสอบนี้ คุณจะต้องทำข้อสอบให้เสร็จภายในเวลาที่กำหนด." %}
+      {% trans "เพื่อผ่านการสอบนี้ คุณจะต้องทำข้อสอบให้เสร็จภายในเวลาที่กำหนด" %}
     </strong>
     {% trans "หลังจากคุณเลือก " %}
     <strong>
-      {% trans "ฉันพร้อมที่จะทำข้อสอบนี้แล้ว," %}
+      {% trans "ฉันพร้อมที่จะทำข้อสอบนี้แล้ว" %}
     </strong>
-    {% trans "คุณจะมีเวลา "%} {{total_time|lower}} {% trans " เพื่อทำข้อสอบให้เสร็จสมบูรณ์." %}
+    {% trans "คุณจะมีเวลา "%} {{total_time|lower}} {% trans " เพื่อทำข้อสอบให้เสร็จสมบูรณ์" %}
   </p>
   <button class="gated-sequence start-timed-exam action-primary" data-ajax-url="{{enter_exam_endpoint}}" data-exam-id="{{exam_id}}">
     <a>
       {% blocktrans %}
-      ฉันพร้อมที่จะทำข้อสอบนี้แล้ว.
+      ฉันพร้อมที่จะทำข้อสอบนี้แล้ว
       {% endblocktrans %}
       <span class="icon fa fa-arrow-circle-right" aria-hidden="true"></span>
     </a>
